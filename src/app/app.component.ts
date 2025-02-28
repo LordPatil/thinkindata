@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-import { ScheduleCallComponent } from './schedule-call/schedule-call.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
-
+import { RouterOutlet, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ScheduleCallComponent,TestimonialsComponent],
+  standalone: true,
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
